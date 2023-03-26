@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+body {
+    background: linear-gradient(192deg, rgb(28, 147, 158), rgb(157, 71, 76));
+    height: 100vh;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background:  no-repeat center/35% url(./img/iphone.png);
+    background-size: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.calculator {
+    margin-top: 170px;
+    width: 290px;
+}
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: right;
+    color: #fff;
+    font-size:60px;
+    padding: 10px 10px 30px;
+    width: 290px;
+}
+.btns {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #313131;
+}
+.num-0, .erase{
+    width: 120px;
+    border-radius: 30px;
+}
+button.num-grey{
+    background-color: #9f9f9f;
+    color: black;
+}
+button.num-orange{
+    background-color:#f69a06;
+    color: black;
+}
+button:hover {
+    opacity: .7;
+}
