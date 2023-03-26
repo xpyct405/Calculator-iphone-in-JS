@@ -2,11 +2,11 @@ let userInput =  document.querySelector("#input");
 let expression = "";
 
 // Запрет нв ввод с клавиатуры букв и некоторых символов
-userInput.addEventListener('input', 
-    function(e){
-      this.value = this.value.replace(/[^\d.]/g, '');
-    }
-)
+// userInput.addEventListener('input', function(e){
+//       this.value = this.value.replace(/[^\d.]/g, '');
+//     }
+// )
+
 
 press = (num) => {
     expression += num;
@@ -25,4 +25,9 @@ press = (num) => {
     userInput.value = expression;
   }
  
-  
+  // Вычислить при нажатии на Enter
+window.addEventListener('keydown', (e) => {
+    if (e.key == "Enter") {
+        equal()
+    }
+})
